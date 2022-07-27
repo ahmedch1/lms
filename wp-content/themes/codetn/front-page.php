@@ -44,27 +44,10 @@
             <div class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri();?>./assets/images/logo.png" alt="code.tn Logo">
             </div>
+            <?php
 
-            <ul class="navbar-nav">
-
-                <li class="nav-item">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#course">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact">Contact Us</a>
-                </li>
-
-            </ul>
-
+            wp_nav_menu(array('theme_location'=>'primary','container'=>false,'menu_class'=>'primary_menu_items'));
+            ?>
             <button class="btn btn-primary">
                 <p class="btn-text">Try for free</p>
                 <span class="square"></span>
@@ -79,11 +62,6 @@
         </nav>
 
     </header>
-
-
-
-
-
     <main>
 
         <!--
