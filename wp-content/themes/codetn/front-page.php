@@ -45,8 +45,7 @@
                 <img src="<?php echo get_template_directory_uri();?>./assets/images/logo.png" alt="code.tn Logo">
             </div>
             <?php
-
-            wp_nav_menu(array('theme_location'=>'primary','container'=>false,'menu_class'=>'primary_menu_items'));
+            wp_nav_menu(array('menu'=>'Primary','menu_class'=>'primary_menu_items navbar-nav'));
             ?>
             <button class="btn btn-primary">
                 <p class="btn-text">Try for free</p>
@@ -1181,33 +1180,14 @@
 
             <ul class="grid-item">
 
-                <h4 class="item-heading">Our Link</h4>
-
-                <li class="list-item">
-                    <a href="#home">Home</a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#about">About Us</a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#course">Courses</a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#blog">Blog</a>
-                </li>
-
-                <li class="list-item">
-                    <a href="#contact">Contact Us</a>
-                </li>
+                <h4 class="item-heading">Our Links</h4>
+                <?php wp_nav_menu(array('menu'=>'Primary','menu_class'=>'primary_menu_items')); ?>
 
             </ul>
 
             <ul class="grid-item">
 
-                <h4 class="item-heading">Other Link</h4>
+                <h4 class="item-heading">Other Links</h4>
 
                 <li class="list-item">
                     <a href="#">Instructor</a>
